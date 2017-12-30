@@ -4,6 +4,8 @@ var HWUrl = PropertiesService.getScriptProperties().getProperty("HWUrl");
 
 var schedHWColumnIndex = 3;
 var HWNotFoundMessage = "Details not found: check the HW calendar at ";
+
+// Automatically triggered every three hours
 function updateCalendar() {
   var chemSchedDoc = DocumentApp.openByUrl(schedUrl);
   var chemHWDoc = DocumentApp.openByUrl(HWUrl);
